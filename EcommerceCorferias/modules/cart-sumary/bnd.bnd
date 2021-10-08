@@ -1,0 +1,5 @@
+Bundle-Name: cart-sumary
+Bundle-SymbolicName: cart.sumary
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.commerce.cart.content.web;bundle-version="3.0.17"
+Portal-Bundle-Version: 7.3.10

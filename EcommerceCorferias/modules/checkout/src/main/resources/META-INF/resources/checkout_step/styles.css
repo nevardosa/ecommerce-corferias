@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+.commerce-checkout .form-group-autofit {
+    display: block;
+}
+    
+.label-nom-ape {
+    width: 100%;
+}    
+    
+.f_size {
+    font-size: 9px;
+}
+
+.m-top-msg {
+    margin-top: 5px !important;    
+}    
+    
+/* 
+    Mensajes de error
+*/
+.name-selector {
+    background-color: transparent;
+    color: rgb(251, 23, 54);
+}
+
+.ape-selector {
+    background-color: transparent;
+    color: rgb(251, 23, 54);
+}
+.mail-selector {
+    background-color: transparent;
+    color: rgb(251, 23, 54);
+}
+
+.pass-selector{
+    background-color: transparent;
+    color: rgb(251, 23, 54);    
+}
+
+.pass-selector-two{
+    background-color: transparent;
+    color: rgb(251, 23, 54);    
+}
