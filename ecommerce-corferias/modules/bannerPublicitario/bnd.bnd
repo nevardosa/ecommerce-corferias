@@ -1,0 +1,4 @@
+Bundle-Name: bannerPublicitario
+Bundle-SymbolicName: bannerPublicitario
+Bundle-Version: 1.0.0
+Export-Package: bannerPublicitario.constants

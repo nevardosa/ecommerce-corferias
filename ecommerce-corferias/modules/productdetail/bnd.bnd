@@ -1,0 +1,4 @@
+Bundle-Name: productdetail
+Bundle-SymbolicName: productdetail
+Bundle-Version: 1.0.0
+Export-Package: productdetail.constants
