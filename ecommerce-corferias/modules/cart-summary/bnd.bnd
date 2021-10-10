@@ -1,5 +1,0 @@
-Bundle-Name: cart-summary
-Bundle-SymbolicName: cart.summary
-Bundle-Version: 1.0.0
-Fragment-Host: com.liferay.commerce.cart.taglib;bundle-version="4.0.13"
-Portal-Bundle-Version: 7.3.10

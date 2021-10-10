@@ -1,4 +1,0 @@
-Bundle-Name: personalInformation
-Bundle-SymbolicName: personalInformation
-Bundle-Version: 1.0.0
-Export-Package: personalInformation.constants
