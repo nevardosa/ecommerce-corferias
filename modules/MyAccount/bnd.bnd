@@ -1,0 +1,4 @@
+Bundle-Name: MyAccount
+Bundle-SymbolicName: com.corferias.account
+Bundle-Version: 1.0.0
+Export-Package: com.corferias.account.constants
