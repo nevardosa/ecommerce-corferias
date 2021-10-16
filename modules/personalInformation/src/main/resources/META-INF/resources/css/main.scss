@@ -24,10 +24,19 @@
     display: flex;
 }
 @media (max-width: 768px){
-    .personal-data {
+    .data .personal-data {
         display: block;
     }
 }
+.personalinformation .modal-footer {
+    border-top: 1px solid #fff;
+}
+@media (max-width: 768px){
+    .personalinformation .modal-footer {
+        justify-content: center;
+    }
+}
+
 .text-personal-data {
     padding-right: 16px;
 }
@@ -108,8 +117,18 @@
 .section-dir-two {
     width: 50%;
 }
+@media (max-width: 768px){
+    .section-dir-two {
+        width: 100%;
+    }
+}
 .seccion-pass {
     width: 50%;
+}
+@media (max-width: 768px){
+    .seccion-pass {
+        width: 100%;
+    }
 }
 .change-passw {
     justify-content: space-between;
@@ -133,6 +152,14 @@
     padding: .5rem;
     border: #fff;
     color: #fb1736;
+}
+@media (max-width: 768px){
+    .btn-change-pass {
+        width: 100%;
+    }   
+}
+.contenedor-pass a {
+    text-decoration: none;
 }
 
 .advertising-banner {
@@ -189,8 +216,6 @@
         padding: 12px;
     }    
 }
-
-
 .addaddress .form-select {
     display: block;
     width: 100%;

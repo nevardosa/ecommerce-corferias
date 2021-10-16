@@ -96,7 +96,7 @@
 
 <!--Modal datos personales-->
 <div class="modal-data personalinformation">
-  <form id="formListCampaignPendingApproval" method="POST" action="">
+  <aui:form id="formPersonalInformation" method="POST" action="<%= savePersonalDataURL%>">
     <div class="modal fade" id="personalinformation" tabindex="-1" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog">
@@ -110,15 +110,15 @@
           <div class="modal-body">
             <div class="mb-3 name-selector">
               <liferay-ui:message key="personalinformation.datanamelast" />
-              <input type="text" class="form-control idname" id="recipient-name">
+              <input name="fullname" type="text" class="form-control idname" id="recipient-name" value="<%= name %>">
             </div>
             <div class="mb-3 phone-selector">
               <liferay-ui:message key="personalinformation.dataphone" />
-              <input type="tel" class="form-control idphone" id="recipient-name">
+              <input name="phone" type="text" class="form-control idphone" id="recipient-phone" value="<%= telephone %>">              
             </div>
             <div class="mb-3 mail-selector">
               <liferay-ui:message key="personalinformation.datamail" />
-              <input type="text" class="form-control idmail" id="recipient-name">
+              <input name="mail" type="text" class="form-control idmail" id="recipient-mail" value="<%= email %>">              
             </div>
           </div>
           <div class="modal-footer">
@@ -135,13 +135,13 @@
         </div>
       </div>
     </div>
-  </form>
+  </aui:form>
 </div>
 
 
-<!--Modal cambio de contraseña-->
+<!--Modal cambio de contrase�a-->
 <div class="modal-data personalinformation">
-  <form id="formListCampaignPendingApproval" method="POST" action="">
+  <aui:form id="formPersonalPass" method="POST" action="<%= changepaswordURL%>">
     <div class="modal fade" id="change-passw" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -154,15 +154,15 @@
           <div class="modal-body">
             <div class="mb-3 pass-current-selector">
               <liferay-ui:message key="personalinformation.datacurrentpass" />
-              <input type="password" class="form-control idcurrent" id="recipient-name">
+              <input name="password" type="password" class="form-control idcurrent" id="recipient-pass" value="">
             </div>
             <div class="mb-3 pass-selector">
               <liferay-ui:message key="personalinformation.datanewpass" />
-              <input type="password" class="form-control idpas" id="recipient-name">
+              <input name="newpassword" type="password" class="form-control idpas" id="recipient-newpass" value="">
             </div>
             <div class="mb-3 pass-selector-two">
               <liferay-ui:message key="personalinformation.dataconfirmpass" />
-              <input type="password" class="form-control idpastwo" id="recipient-name">
+              <input name="confirnewpassword" type="password" class="form-control idpastwo" id="recipient-connewpass" value="">
             </div>
           </div>
           <div class="modal-footer">
@@ -180,7 +180,7 @@
         </div>
       </div>
     </div>
-  </form>
+  </aui:form>
 </div>
 
 <%@include file="validateForm.jsp"%>

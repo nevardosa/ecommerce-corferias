@@ -107,7 +107,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="divbtn mt-5">
+					<div class="divbtn mt-3">
 						<div class="modal-btn">
 							<button type="button" class="btn-gray text-color-white font-w btn-cancel" data-bs-dismiss="modal">
 								<liferay-ui:message key="personalinformation.databtncancel" />

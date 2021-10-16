@@ -24,10 +24,19 @@
     display: flex;
 }
 @media (max-width: 768px){
-    .personal-data {
+    .data .personal-data {
         display: block;
     }
 }
+.personalinformation .modal-footer {
+    border-top: 1px solid #fff;
+}
+@media (max-width: 768px){
+    .personalinformation .modal-footer {
+        justify-content: center;
+    }
+}
+
 .text-personal-data {
     padding-right: 16px;
 }
@@ -35,7 +44,9 @@
     flex-basis: calc(95% - 1rem);
 }
 .edit-data {
-    flex-basis: calc(5% - 1rem);    
+    display: flex;
+    flex-basis: calc(8% - 1rem);
+    justify-content: end;    
 }
 
 .modal-data {
@@ -48,6 +59,11 @@
     width: 10rem;
     padding: .5rem;
     border: rgb(251, 23, 54);
+}
+@media (max-width: 768px){
+    .btn-red {
+        width: 14rem;  
+    }
 }
 .text-color-white {
     color: #FFF;
@@ -69,6 +85,12 @@
     padding: .5rem;
     border: #707070;    
 }
+@media (max-width: 768px){
+    .btn-gray {
+        width: 14rem;  
+    }    
+}
+
 .modal-btn {
     flex: 0 0 calc(50% - 1rem);
     text-align: center;
@@ -95,8 +117,18 @@
 .section-dir-two {
     width: 50%;
 }
+@media (max-width: 768px){
+    .section-dir-two {
+        width: 100%;
+    }
+}
 .seccion-pass {
     width: 50%;
+}
+@media (max-width: 768px){
+    .seccion-pass {
+        width: 100%;
+    }
 }
 .change-passw {
     justify-content: space-between;
@@ -120,4 +152,98 @@
     padding: .5rem;
     border: #fff;
     color: #fb1736;
+}
+@media (max-width: 768px){
+    .btn-change-pass {
+        width: 100%;
+    }   
+}
+.contenedor-pass a {
+    text-decoration: none;
+}
+
+.advertising-banner {
+    display: block;
+}
+.advertising-banner-img {
+    display: block;
+    height: 200px;
+}
+
+.advertising-banner img {
+    width: 100%;
+    height: 200px;
+}
+
+.editar {
+    display: block;
+    text-align: center;
+}
+
+.btn-red-opacity {
+    opacity: 50%;
+}
+
+/* ADDADDRESS */
+
+.addaddress .form-control {
+    border-radius: 50rem;
+}
+.form-select-round {
+    border-radius: 50rem;
+}
+.divbtn {
+    display:flex;
+    justify-content: left;
+    gap: 1rem;
+}
+
+@media (max-width: 768px){
+    .divbtn {
+        display: block;
+        margin: 2rem;
+    }
+}
+
+.addaddress .modal-btn {
+    flex: 0 0 calc(12% - 1rem);
+    text-align: left;
+}
+@media (max-width: 768px){
+    .addaddress .modal-btn {
+        display: block;
+        text-align: center;
+        padding: 12px;
+    }    
+}
+.addaddress .form-select {
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2a2a2a;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-color: #f1f2f5;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #e7e7ed;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.addaddress .form-select:focus-visible {
+    border: 1px solid #e7e7ed;
+ }
+
+ .addaddress label {
+     font-weight: 100;
+     color: #2a2a2a;
+ }
+ .label-nom-ape {
+    width: 100%;
 }
